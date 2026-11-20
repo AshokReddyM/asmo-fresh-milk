@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#234b38" />
-    <title>Asmo Fresh Milk | Buffalo Milk, From Farm to Door</title>
+    <title>Buffalo Milk in Ongole | ₹90/L, Free Delivery | Asmo</title>
     <meta
       name="description"
-      content="Fresh buffalo milk in glass bottles. Explore 500 ml, 1 litre and 2 litre sizes, and enquire with Asmo Fresh Milk about delivery in your area."
+      content="Asmo Fresh Milk delivers buffalo milk in Ongole at ₹90 per litre with free delivery. Explore glass bottle sizes and enquire about your delivery address."
     />
     <link rel="canonical" href="https://asmofresh.com/" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Asmo Fresh Milk — A fresh start to every morning."
+      content="Buffalo Milk Delivery in Ongole | Asmo Fresh Milk"
     />
     <meta
       property="og:description"
-      content="Buffalo milk, glass bottles, and a little care in every delivery. Find your everyday bottle."
+      content="Fresh buffalo milk at ₹90 per litre. Free delivery in Ongole. Choose your bottle size and enquire with Asmo Fresh Milk."
     />
     <meta property="og:url" content="https://asmofresh.com/" />
     <meta
@@ -25,6 +25,13 @@
       content="https://asmofresh.com/assets/asmo-hero.webp"
     />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta property="og:site_name" content="Asmo Fresh Milk" />
+    <meta property="og:locale" content="en_IN" />
+    <meta
+      property="og:image:alt"
+      content="Asmo Fresh Milk branded bottle illustration"
+    />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,15 +40,45 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
+    <script src="/navigation.js" defer></script>
     <script src="/app.js" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Asmo Fresh Milk",
-        "url": "https://asmofresh.com/",
-        "telephone": "+919989986695",
-        "email": "aaashokreddy@gmail.com"
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://asmofresh.com/#organization",
+            "name": "Asmo Fresh Milk",
+            "url": "https://asmofresh.com/",
+            "logo": "https://asmofresh.com/assets/asmo-logo.svg",
+            "telephone": "+919989986695",
+            "email": "aaashokreddy@gmail.com",
+            "areaServed": { "@type": "City", "name": "Ongole" },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+919989986695",
+              "contactType": "customer service",
+              "areaServed": "Ongole"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://asmofresh.com/#website",
+            "url": "https://asmofresh.com/",
+            "name": "Asmo Fresh Milk",
+            "publisher": { "@id": "https://asmofresh.com/#organization" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://asmofresh.com/#webpage",
+            "url": "https://asmofresh.com/",
+            "name": "Buffalo Milk in Ongole | ₹90/L, Free Delivery | Asmo",
+            "isPartOf": { "@id": "https://asmofresh.com/#website" },
+            "about": { "@id": "https://asmofresh.com/#organization" },
+            "inLanguage": "en-IN"
+          }
+        ]
       }
     </script>
   </head>
@@ -74,8 +111,8 @@
       </defs>
     </svg>
     <div class="announcement">
-      A little closer to the farm. A fresher start to your day.
-      <span>Made for your everyday.</span>
+      Buffalo milk in Ongole · ₹90 per litre
+      <span>Free delivery</span>
     </div>
     <header class="header wrap">
       <a class="brand" href="/" aria-label="Asmo Fresh Milk home"
@@ -83,8 +120,8 @@
           <use href="#logo" /></svg
       ></a>
       <nav id="navigation" aria-label="Main navigation">
-        <a href="#products">Our milk</a><a href="#journey">Farm to home</a
-        ><a href="#delivery">Delivery</a><a href="#faq">FAQs</a>
+        <a href="/buffalo-milk/">Our milk</a><a href="#journey">Farm to home</a
+        ><a href="/milk-delivery-ongole/">Delivery</a><a href="#faq">FAQs</a>
       </nav>
       <a class="header-cta" href="#order"
         >Get fresh milk
@@ -118,13 +155,18 @@
             >
               <path d="M20 3C7 2 2 9 6 16c6 8 15-2 14-13ZM4 21 16 8" />
             </svg>
-            GOOD MORNINGS START HERE
+            FRESH MILK FOR ONGOLE
           </p>
-          <h1>Fresh from<br />the farm.<br /><em>Full of goodness.</em></h1>
+          <h1>Fresh buffalo milk.<br /><em>Delivered in Ongole.</em></h1>
           <p class="lead">
-            Rich, creamy buffalo milk. Bottled in glass, delivered to your
-            doorstep, and ready for the little moments that make your morning.
+            Rich, creamy buffalo milk in glass bottles, delivered to your home
+            in Ongole. ₹90 per litre, with no delivery charges. Start with a
+            bottle that fits your morning.
           </p>
+          <div class="price-highlight">
+            <strong>₹90 <span>/ litre</span></strong
+            ><span>Free delivery in Ongole</span>
+          </div>
           <div class="actions">
             <a class="button" href="#products"
               >Find your everyday bottle
@@ -291,8 +333,8 @@
           </article>
         </div>
         <p class="section-note">
-          Bottle imagery is illustrative. We’ll confirm pricing and delivery
-          availability before an order is placed.
+          ₹90 per litre with free delivery in Ongole. Ask us to confirm your
+          chosen bottle size and address. Bottle imagery is illustrative.
         </p>
       </section>
       <section class="story section" id="journey">
@@ -387,7 +429,8 @@
               <path d="M5 12h14m-6-6 6 6-6 6" /></svg
           ></a>
           <p class="small-note">
-            Availability and timing are confirmed personally.
+            Free delivery in Ongole. Your address and timing are confirmed
+            personally.
           </p>
         </div>
         <div class="delivery-photo">
@@ -406,6 +449,42 @@
           <div class="delivery-caption">
             The everyday moments.<br /><em>Made a little better.</em>
           </div>
+        </div>
+      </section>
+      <section
+        class="learn-section section wrap"
+        aria-labelledby="learn-heading"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">KNOW YOUR EVERYDAY MILK</p>
+            <h2 id="learn-heading">
+              A little more detail.<br /><em>A simpler choice.</em>
+            </h2>
+          </div>
+          <p>
+            Choose a bottle, plan your routine, and find out how delivery works
+            in Ongole.
+          </p>
+        </div>
+        <div class="guide-links">
+          <a href="/buffalo-milk/"
+            ><span>01 / OUR MILK</span>
+            <h3>Buffalo milk &amp; bottle sizes</h3>
+            <p>
+              Compare 500 ml, 1 litre, and 2 litre bottles, see the
+              ₹90-per-litre rate, and plan your household’s quantity.
+            </p>
+            <b>Explore our milk →</b></a
+          ><a href="/milk-delivery-ongole/"
+            ><span>02 / LOCAL DELIVERY</span>
+            <h3>Milk delivery in Ongole</h3>
+            <p>
+              Free delivery, schedule preferences, address checks, and what to
+              include in your first enquiry.
+            </p>
+            <b>See delivery details →</b></a
+          >
         </div>
       </section>
       <section class="faq section" id="faq">
@@ -430,15 +509,16 @@
               <summary>What kind of milk is it?</summary>
               <p>
                 Asmo Fresh Milk offers buffalo milk in glass bottles, in 500 ml,
-                1 litre, and 2 litre sizes.
+                1 litre, and 2 litre sizes. Our confirmed milk rate is ₹90 per
+                litre.
               </p>
             </details>
             <details>
               <summary>Do you deliver to my area?</summary>
               <p>
-                Share your city and locality in the enquiry below, or call 99899
-                86695. We’ll confirm whether delivery is available at your
-                address.
+                We currently deliver in Ongole. Share your neighbourhood, PIN
+                code, and a nearby landmark, or call 99899 86695, so we can
+                confirm delivery to your specific address.
               </p>
             </details>
             <details>
@@ -451,9 +531,9 @@
             <details>
               <summary>How much does the milk cost?</summary>
               <p>
-                Contact us with your preferred bottle size and locality. We’ll
-                confirm the current price and any delivery details before you
-                place an order.
+                Buffalo milk costs ₹90 per litre. Delivery is free in Ongole.
+                Ask us to confirm the total for your chosen bottle size and
+                delivery schedule before placing an order.
               </p>
             </details>
             <details>
@@ -488,8 +568,8 @@
           <div class="order-decoration" aria-hidden="true">✳</div>
         </div>
         <form id="enquiry-form">
-          <h3>Enquire about delivery</h3>
-          <p class="form-intro">A few details to find the right fit.</p>
+          <h3>Enquire about Ongole delivery</h3>
+          <p class="form-intro">₹90 per litre · Free delivery in Ongole</p>
           <div class="form-row">
             <label for="name"
               >Your name<input
@@ -517,7 +597,7 @@
               id="area"
               name="area"
               autocomplete="address-level2"
-              placeholder="City and neighbourhood"
+              placeholder="Ongole neighbourhood and PIN code"
               maxlength="160"
               required
           /></label>
@@ -591,8 +671,9 @@
         <a class="footer-brand" href="/">Asmo<em>Fresh Milk</em></a>
         <p>A little care.<br />A lot of goodness.</p>
         <nav aria-label="Footer navigation">
-          <a href="#products">Our milk</a><a href="#journey">Our journey</a
-          ><a href="#order">Delivery enquiry</a>
+          <a href="/buffalo-milk/">Our milk</a><a href="#journey">Our journey</a
+          ><a href="/milk-delivery-ongole/">Ongole delivery</a
+          ><a href="/#order">Delivery enquiry</a>
         </nav>
         <div class="footer-contact">
           <a href="tel:+919989986695">+91 99899 86695</a

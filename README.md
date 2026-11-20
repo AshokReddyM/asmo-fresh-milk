@@ -23,3 +23,20 @@ The form prepares an email to the contact address from the original website. The
 ## Validation performed
 
 Checked 320, 390, 768, and 1440 px layouts, mobile navigation, bottle-size selection, enquiry text preparation, stale-result clearing, FAQ expansion, reduced-motion behavior, and content visibility with JavaScript disabled. These checks do not send an enquiry.
+
+## SEO and local content
+
+Confirmed by the business: Ongole is the current service city; buffalo milk is ₹90 per litre; delivery is free. Exact address coverage and timing are confirmed on enquiry. Do not add neighbourhoods, a street address, business hours, ratings, or certification claims without confirmation.
+
+Crawlable pages:
+- `/`: brand, local price, delivery information, enquiry form
+- `/buffalo-milk/`: bottle sizes, litre price, quantity planning, product questions
+- `/milk-delivery-ongole/`: local service coverage, delivery schedules, enquiry steps
+
+Run `python3 scripts/build-content.py` after editing the homepage shell or page definitions, then `python3 scripts/check-site.py`. Generated pages are committed so GitHub Pages serves them without a build dependency. `navigation.js` is shared; `app.js` handles the homepage enquiry form.
+
+Each page has a unique title, description, canonical URL, and linked structured data. The product offer is only for the confirmed 1-litre price (INR 90); other bottle prices are not invented. Organization markup uses the actual logo and Ongole service area. No address-dependent LocalBusiness rich-result claim is made. The sitemap lists all three canonical URLs.
+
+Search Console: the signed-in account did not have verified access to this property during setup. Owner verification and sitemap submission remain pending; publish the site first, then verify the correct account and submit `https://asmofresh.com/sitemap.xml`. A verified Google Business Profile with accurate service-area details is also useful for local visibility. These changes cannot guarantee a search position.
+
+References: [Google SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide), [Organization structured data](https://developers.google.com/search/docs/appearance/structured-data/organization), [Sitemap guidance](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap).
