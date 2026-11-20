@@ -10,7 +10,7 @@ python3 scripts/check-site.py
 node --check app.js
 ```
 
-The page uses HTML, CSS, and a small JavaScript file. Existing brand artwork is embedded as SVG; two images from the original website are stored in `assets/` and loaded lazily. Fonts are requested from Google Fonts with local fallbacks.
+The page uses HTML, CSS, and a small JavaScript file. The existing brand logo is embedded as SVG. Generated product and lifestyle illustrations use optimized WebP files in `assets/`, with responsive sizes and lazy loading below the fold. The hero image loads with high priority. Prompts and image provenance are recorded in `assets/image-prompts.md`. Fonts are requested from Google Fonts with local fallbacks.
 
 ## Enquiries
 

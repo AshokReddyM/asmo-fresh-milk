@@ -232,109 +232,28 @@ h1 em {
   color: var(--green);
 }
 .hero-visual {
-  aspect-ratio: 0.88;
-  position: relative;
-  border-radius: 220px 220px 18px 18px;
-  background: #e8eddb;
-  isolation: isolate;
-  overflow: hidden;
+  margin: 0;
+  min-width: 0;
 }
-.hero-visual:before {
-  content: "";
-  position: absolute;
-  inset: 53% -20% -30%;
-  background: #d6e1c1;
-  border-radius: 50%;
-  transform: rotate(-12deg);
-}
-.visual-ring {
-  position: absolute;
-  inset: 7% 7% 20%;
-  border: 1px solid #c2ceaf;
-  border-radius: 50%;
-}
-.visual-caption {
-  position: absolute;
-  top: 13%;
-  width: 100%;
-  text-align: center;
-  font-size: 8px;
-  letter-spacing: 2px;
-  color: #667456;
-}
-.bottle-primary,
-.bottle-secondary {
-  position: absolute;
-  filter: drop-shadow(12px 24px 15px #43593325);
-}
-.bottle-primary {
-  width: 36%;
-  bottom: 11%;
-  left: 36%;
-  transform: rotate(9deg);
-  animation: bottle-float 7s ease-in-out infinite;
-}
-.bottle-secondary {
-  width: 27%;
-  bottom: 11%;
-  left: 16%;
-  transform: rotate(-13deg);
-}
-.bottle {
+.hero-photo {
   width: 100%;
   height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: 24px 120px 24px 24px;
 }
-.milk-sun {
-  position: absolute;
-  top: 23%;
-  left: 9%;
-  z-index: 2;
-  background: #f5dc8b;
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 15px;
-  transform: rotate(-12deg);
-}
-.milk-sun em {
-  font-size: 20px;
-  color: var(--deep);
-}
-.milk-sun > span {
-  font-size: 22px;
-  margin-top: 3px;
-}
-.visual-footer {
-  position: absolute;
-  bottom: 4%;
-  left: 6%;
-  right: 6%;
+.hero-image-caption {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 9px;
-  color: #546b42;
+  gap: 20px;
+  padding: 16px 3px 0;
+  color: var(--muted);
+  font-size: 10px;
 }
-.floating-label {
-  position: absolute;
-  right: 4%;
-  bottom: 28%;
-  padding: 15px 17px;
-  background: #fffaf0;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px #3250290d;
-  font-size: 9px;
-  transform: rotate(5deg);
-}
-.floating-label span {
-  display: block;
-  font-family: var(--serif);
-  font-size: 27px;
+.hero-image-caption span:last-child {
+  font-size: 8px;
+  letter-spacing: 1.5px;
 }
 .values-strip {
   border-block: 1px solid var(--line);
@@ -401,10 +320,10 @@ h2 {
 }
 .product-bottle {
   height: 230px;
-  filter: drop-shadow(8px 15px 9px #30422d20);
+
   transition: transform 0.4s;
 }
-.product-bottle .bottle {
+.product-bottle img {
   height: 100%;
   width: auto;
 }
@@ -843,11 +762,7 @@ footer {
 .skip:focus {
   top: 12px;
 }
-@keyframes bottle-float {
-  50% {
-    translate: 0 -8px;
-  }
-}
+
 @media (max-width: 1050px) {
   .wrap {
     width: calc(100% - 56px);
@@ -865,20 +780,7 @@ footer {
     font-size: 8px;
     gap: 7px;
   }
-  .milk-sun {
-    width: 85px;
-    height: 85px;
-    font-size: 12px;
-  }
-  .milk-sun em {
-    font-size: 16px;
-  }
-  .milk-sun > span {
-    font-size: 16px;
-  }
-  .floating-label {
-    padding: 10px;
-  }
+
   .story-layout,
   .delivery,
   .order,
@@ -1012,37 +914,7 @@ footer {
     aspect-ratio: 1.02;
     border-radius: 180px 180px 15px 15px;
   }
-  .bottle-primary {
-    width: 32%;
-    bottom: 11%;
-    left: 38%;
-  }
-  .bottle-secondary {
-    width: 24%;
-    left: 19%;
-  }
-  .visual-caption {
-    top: 12%;
-    font-size: 7px;
-    letter-spacing: 1.5px;
-  }
-  .milk-sun {
-    top: 23%;
-    left: 10%;
-    width: 88px;
-    height: 88px;
-  }
-  .visual-footer {
-    font-size: 8px;
-  }
-  .floating-label {
-    right: 6%;
-    bottom: 29%;
-    font-size: 8px;
-  }
-  .floating-label span {
-    font-size: 23px;
-  }
+
   .values-strip {
     padding: 18px 0;
   }
@@ -1252,6 +1124,247 @@ footer {
     transition: none !important;
   }
   .button:hover,
+  .product:hover .product-bottle {
+    transform: none;
+  }
+}
+
+/* Art direction for the new photographic collection. */
+.hero {
+  gap: 55px;
+}
+.product-art,
+.product-medium .product-art,
+.product-large .product-art {
+  background: #f4efe6;
+}
+.product-art {
+  height: 350px;
+  border: 1px solid #e9e5db;
+}
+.product-bottle {
+  height: 290px;
+}
+.product-medium .product-bottle {
+  height: 305px;
+}
+.product-large .product-bottle {
+  height: 320px;
+}
+.product-bottle img {
+  width: auto;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+.bottle-size {
+  z-index: 1;
+  background: #fffdf7;
+  border: 1px solid #e5e0d3;
+}
+.product-art-note {
+  bottom: 12px;
+  font-size: 7px;
+}
+.story-photo {
+  min-height: 0;
+  aspect-ratio: 4/5;
+  align-self: center;
+}
+.story-photo > img {
+  border-radius: 110px 16px 16px 16px;
+  object-position: center;
+}
+.photo-caption {
+  top: 25px;
+  bottom: auto;
+  background: transparent;
+  font-size: 25px;
+  padding: 0;
+}
+.delivery-photo {
+  height: auto;
+  border-radius: 18px;
+  background: #e8edde;
+}
+.delivery-photo img {
+  aspect-ratio: 4/5;
+  height: auto;
+  object-fit: contain;
+}
+.delivery-photo:after {
+  display: none;
+}
+.delivery-caption {
+  position: static;
+  padding: 22px 28px;
+  font-size: 30px;
+  color: var(--deep);
+}
+.delivery-caption em {
+  color: #657f49;
+}
+@media (max-width: 1050px) and (min-width: 761px) {
+  .hero {
+    gap: 30px;
+  }
+  .hero-image-caption {
+    font-size: 9px;
+  }
+  .hero-image-caption span:last-child {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .hero {
+    gap: 30px;
+  }
+  .hero-visual {
+    aspect-ratio: auto;
+    background: none;
+    border-radius: 0;
+    overflow: visible;
+    max-width: 470px;
+  }
+  .hero-photo {
+    aspect-ratio: 4/5;
+    border-radius: 18px 85px 18px 18px;
+  }
+  .hero-image-caption {
+    padding-top: 13px;
+    font-size: 9px;
+    gap: 10px;
+  }
+  .hero-image-caption span:last-child {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .product-grid {
+    gap: 0;
+  }
+  .product {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 20px;
+    padding-block: 22px;
+    border-top: 1px solid var(--line);
+  }
+  .product:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+  .product-art {
+    height: 178px;
+    border-radius: 12px;
+  }
+  .product-bottle {
+    height: 145px;
+  }
+  .product-medium .product-bottle {
+    height: 155px;
+  }
+  .product-large .product-bottle {
+    height: 165px;
+  }
+  .bottle-size {
+    top: 8px;
+    left: 8px;
+    font-size: 9px;
+    padding: 4px 8px;
+  }
+  .product-art-note {
+    display: none;
+  }
+  .product-info {
+    align-self: center;
+    padding: 0;
+  }
+  .product-info h3 {
+    font-size: 23px;
+    line-height: 1.15;
+  }
+  .product-info p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .size-link {
+    padding-block: 10px 5px;
+    margin-top: 8px;
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .story-photo {
+    min-height: 0;
+    aspect-ratio: 4/5;
+  }
+  .story-photo > img {
+    border-radius: 85px 14px 14px 14px;
+  }
+  .photo-caption {
+    top: 25px;
+    bottom: auto;
+    font-size: 21px;
+  }
+  .delivery-photo {
+    height: auto;
+  }
+  .delivery-caption {
+    font-size: 28px;
+    padding: 22px;
+  }
+}
+@media (max-width: 360px) {
+  .product {
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 14px;
+  }
+  .product-info h3 {
+    font-size: 21px;
+  }
+  .product-art {
+    height: 165px;
+  }
+  .hero-image-caption span:last-child {
+    display: none;
+  }
+}
+/* Let the studio photograph fill its frame without an inset background edge. */
+.product-art {
+  aspect-ratio: 4 / 5;
+  height: auto;
+}
+.product-bottle,
+.product-medium .product-bottle,
+.product-large .product-bottle {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.product-bottle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: normal;
+}
+.product:hover .product-bottle {
+  transform: scale(1.025);
+}
+.product-art-note {
+  padding: 5px 8px;
+  border-radius: 4px;
+  background: #faf8f1c9;
+}
+@media (max-width: 760px) {
+  .product-art {
+    aspect-ratio: auto;
+    height: 178px;
+  }
+}
+@media (max-width: 360px) {
+  .product-art {
+    height: 165px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
   .product:hover .product-bottle {
     transform: none;
   }
