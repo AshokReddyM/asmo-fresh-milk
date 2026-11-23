@@ -2,8 +2,9 @@
   "site": "https://asmofresh.com/app/",
   "staff": "https://asmofresh.com/app/#staff",
   "confirmation": "https://asmofresh.com/app/confirm.html",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "design": "Minimal layouts, static bold Manrope and Telugu weights, mint, sunshine, lilac and sky accents",
   "release": "2026-11-23",
-  "backend": "Supabase with authenticated row-level access"
+  "backend": "Supabase with authenticated row-level access",
+  "login": "Mobile OTP only; live SMS setup pending"
 }
