@@ -1,0 +1,8 @@
+{
+  "site": "https://asmofresh.com/app/",
+  "staff": "https://asmofresh.com/app/#staff",
+  "confirmation": "https://asmofresh.com/app/confirm.html",
+  "build": "Kotlin Compose Multiplatform production",
+  "release": "2026-11-23",
+  "backend": "Supabase with authenticated row-level access"
+}
