@@ -2,8 +2,8 @@
   "site": "https://asmofresh.com/app/",
   "staff": "https://asmofresh.com/app/#staff",
   "confirmation": "https://asmofresh.com/app/confirm.html",
-  "version": "0.6.4",
-  "design": "Consistent litre quantities, role-specific staff data loading and navigation, clearer personal expense actions and OTP errors",
+  "version": "0.6.5",
+  "design": "Time-aware milk journey, compact buffalo delivery card, subtle status motion and a dedicated desktop customer layout",
   "release": "2026-11-24",
   "backend": "Supabase with authenticated row-level access",
   "login": "One mobile OTP flow; account and role are committed together after server verification"
