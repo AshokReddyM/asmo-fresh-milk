@@ -2,7 +2,7 @@
   "site": "https://asmofresh.com/app/",
   "staff": "https://asmofresh.com/app/#staff",
   "confirmation": "https://asmofresh.com/app/confirm.html",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "design": "Time-aware milk journey, delivery calendar, readable dates, referral card, compact buffalo delivery card and dedicated desktop customer layout",
   "release": "2026-11-24",
   "backend": "Supabase with authenticated row-level access",
